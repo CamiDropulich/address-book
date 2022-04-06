@@ -1,0 +1,74 @@
+@import "./Variables/Variables.scss";
+
+*{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/540/792/non_2x/light-blue-green-background-with-circles-abstract-colorful-disks-on-simple-gradient-background-design-for-your-commercials-vector.jpg");
+    background-size: cover;
+    background-attachment: fixed;}
+
+.cont-login{
+    margin-top: 10%;
+    .row-login{
+        display: flex;
+        justify-content: space-around;
+    }
+    .login-card{
+        @include frameStyle();
+        width: 35%
+    }
+}
+
+.div-login{
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 10px
+    }
+    label{
+        @include graltext();
+        font-size: 18px;
+        margin-bottom: 0% !important
+      }
+    input{
+        @include inputStyle();
+        width: 50%;
+    }
+    span{
+        font-size: 10px;
+    }
+    button{
+        @include btnStyle();
+        margin-top: 3%
+    }
+    .btn-login{
+        margin-top: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button{
+            padding-left: 35px;
+            padding-right: 35px;
+            background: $lightbluecolor;
+            color: white;
+            border-color: $lightgraycolor;
+        }
+    }
+    .btn-out{
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    a{
+        @include linkStyle();
+        font-size: 18px;
+        margin-top: 5%;
+    }
+}
+
+
+@media (max-width: 1000px){
+    .cont-login .login-card{
+        width: 80% !important;
+    }
+}

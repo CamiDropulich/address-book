@@ -1,0 +1,65 @@
+@import "./Variables/Variables.scss";
+
+.cont-new {
+    @include frameStyle();
+    .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    h4{
+      color: $font-color
+    }
+    label{
+      @include graltext();
+      margin-bottom: 0% !important
+    }
+    input{
+      @include inputStyle()
+    }
+    select{
+      @include inputStyle();
+      border: solid 2px $lightbluecolor
+    }
+    form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    span{
+      font-size: 10px;
+    }
+    button{
+      @include btnStyle();
+      width: 10%;
+      margin: 2%;
+      margin-left: 42%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+
+  
+ 
+  .cont-new label,
+  .cont-new select,
+  .cont-new h4, .cont-new span {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+  
+  
+  .cont-new label, .cont-new span{
+    margin-bottom: 0% !important;
+  }
+  
+
+  
+@media (max-width: 1000px) {
+    .cont-new{
+      width: 70% !important;
+      margin-top: 5%;
+    }
+}

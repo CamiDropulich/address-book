@@ -1,0 +1,42 @@
+@import "./Variables/Variables.scss";
+
+.back{
+    @include backStyle()
+}
+
+.cont-detail{
+    margin-top: 3%;
+    .cont-card{
+        padding: 50px;
+        @include frameStyle();
+        .container{
+            margin-bottom: 2%
+        }
+    }
+}
+
+.each-contact{
+    input{
+    @include inputStyle();
+    width: 50%;
+    }
+    select{
+    @include inputStyle();
+    width: 50%
+    }
+   button{
+    @include btnStyle;
+    a{
+        @include linkStyle()
+    }
+   }
+   .btn-save{
+    margin-left: 17%;
+    margin-right: 3%;
+   }
+   h5{
+       margin-top: 3%;
+       font-size: 18px;
+   }
+    
+}

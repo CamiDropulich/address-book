@@ -1,0 +1,64 @@
+//colors
+
+$lightbluecolor: #58a4b0;
+$graybluecolor: #a9bcd0;
+$lightgraycolor: #e2e4e9;
+$font-color: #475575;
+$logoutcolor: #4a6665;
+
+//font-sizes
+
+$graltext: 15px;
+
+
+//mixin
+@mixin frameStyle() {
+    border: solid 2px $lightbluecolor;
+    border-radius: 30px;
+    box-shadow: inset 2px 2px 13px 0px $graybluecolor, inset -1px -1px 15px $graybluecolor, -1px 0px 0px $graybluecolor, -2px -2px 10px $graybluecolor;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $lightbluecolor
+};
+    
+
+@mixin inputStyle(){
+    border-radius: 10px;
+    border-color: $lightbluecolor;
+    margin-top: 0%;
+    width: 70%
+};
+
+@mixin graltext(){
+    font-size: $graltext;
+    color: $font-color;
+};
+
+@mixin mainFrame(){
+    min-height: 38rem;
+    max-height: 70rem;
+
+};
+
+@mixin btnStyle(){
+    border-radius: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: white;
+    border-color: $lightbluecolor;
+    color: $lightbluecolor
+
+}
+
+@mixin linkStyle{
+    text-decoration: none;
+    color: $font-color;
+    font-size: 13px;
+}
+
+@mixin backStyle{
+    width: 3%;
+    margin-top: 2%;
+    margin-left: 2%;
+    opacity: 0.6;
+}

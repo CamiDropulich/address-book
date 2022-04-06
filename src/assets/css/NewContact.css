@@ -1,0 +1,27 @@
+.cont-new {
+  border: solid 1px #000;
+}
+
+.cont-new .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cont-new input,
+.cont-new label,
+.cont-new select,
+.cont-new h4 {
+  width: 50%;
+  margin: 2%;
+}
+
+.cont-new label{
+  margin-bottom: 0%;
+}
+
+.cont-new button {
+  width: 10%;
+  margin: 2%;
+  margin-left: 42%;
+}

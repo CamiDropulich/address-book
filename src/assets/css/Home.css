@@ -1,0 +1,27 @@
+* {
+  background-image: url("../statics/back2.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  margin-top: 15%;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+  padding: 4%;
+  border: solid 1px rgb(54 4 127 / 70%);
+  background: rgba(54, 4, 127, 0.6);
+  border-radius: 30px;
+}
+
+.input {
+  width: 50%;
+  margin: 2%;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+}
